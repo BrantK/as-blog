@@ -1,0 +1,158 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 8, 2016
+    Author     : Brant
+*/
+
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #A3CDCD;
+}
+
+#container {
+    width: 800px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+#headerBanner {
+    width: 800px;
+    height: 100px;
+    background-color: teal;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#headerBanner h1 {
+    padding: 30px;
+}
+
+#contact {
+    background: gainsboro;
+    float: left;
+    width: 270px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#contact #facebook {
+    float: left;
+    text-decoration: none;
+    margin: 30px 0 0 20px;
+}
+
+#contact #email {
+    float: left;
+    text-decoration: none;
+    margin: 30px 0 0 60px;
+}
+
+#nav {
+    background: gainsboro;
+    float: left;
+    width: 530px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+#nav ul li {
+    display: inline;
+    position: relative;
+    font-size: large;
+    font-family: tahoma, sans-serif;
+    margin-left: 20px;
+    padding: 0 0 0 25px;
+}
+
+#nav li a:link, #nav li a:visited  {
+    border: solid #ccc .5px;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    background-color: darkcyan;
+    text-decoration: none;
+    -webkit-box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
+    -moz-box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
+    box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
+}
+
+#nav li a:active, #nav li a:hover {
+    position: relative;
+    top: 3px;
+    left: -3px;
+    color: whitesmoke;
+    background-color: #276F6F;
+    -webkit-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+    -moz-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+    box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+}
+
+#nav li a.current {
+    position: relative;
+    color: #cccccc;
+    background-color: #666666;
+    pointer-events: none;
+    top: 3px;
+    left: -3px;
+    -webkit-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+    -moz-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+    box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+}
+
+#main h2 {
+    clear: left;
+    padding: 15px 0 15px 20px;
+    margin: 0;
+    color: #6AA3A3;
+}
+
+#mainContent h3 {
+    color: #6AA3A3;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+#main #mainContent {
+    float: left;
+    padding: 0px 10px 15px 20px;
+    margin: 0;
+    width: 400px;
+}
+
+#mainContent p {
+    padding: 0 0 20px 0;
+    margin: 0px;
+}
+
+#main #sidebar {
+    float: right;
+    width: 250px;
+    padding-left: 20px;
+    border-left: solid gray 1px;
+}
+
+#footer {
+    border: black;
+    clear: both;
+    font-style: italic;
+    color: white;
+    font-size: small;
+    text-align: center;
+}
+
+#clear {
+    clear: both;
+}
