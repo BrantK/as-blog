@@ -7,9 +7,9 @@ var writeDoc = {
 };
 
 var getFeed = { 
-    allergyFeed: function() {
+    allergyFeed: function(rssURL) {
         var params = {
-            rssmikle_url: "https://www.foodallergy.org/feed.rss?id=11",
+            rssmikle_url: rssURL,
             rssmikle_frame_width: "250",
             rssmikle_frame_height: "450",
             frame_height_by_article: "0",
@@ -24,13 +24,13 @@ var getFeed = {
             scrollbar: "on",
             autoscroll: "on",
             scrolldirection: "up",
-            scrollstep: "5",
+            scrollstep: "6",
             mcspeed: "10",
             sort: "Off",
             rssmikle_title: "on",
             rssmikle_title_sentence: "",
             rssmikle_title_link: "",
-            rssmikle_title_bgcolor: "#0066FF",
+            rssmikle_title_bgcolor: "#179A9A",
             rssmikle_title_color: "#FFFFFF",
             rssmikle_title_bgimage: "",
             rssmikle_item_bgcolor: "#FFFFFF",
