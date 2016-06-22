@@ -32,17 +32,36 @@
             </div> <!-- nav -->
 
             <div id="contact">
-                <a href="http://www.facebook.com" id="facebook">Facebook</a>
-                <a href="mailto:something@email.com" id="email">Email</a>
+                <div id="contactButtons">
+                    <a href="http://www.facebook.com" target="_blank" id="facebook">Facebook</a>
+                    <a href="mailto:something@email.com" target="_blank" id="email">Email</a>
+                </div>
             </div>
 
             <div id="main">
                 
                 <div id="sidebar">
-                    <script src="js/allergyAlertFeed.js" type="text/javascript"></script>
+                    
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+                    <script src="js/rssButtons.js" type="text/javascript"></script>
+                    
+                    <script src="js/rssFeed.js" type="text/javascript"></script>
                     <script> writeDoc.widgetUrl(); </script>
-                    <script> getFeed.allergyFeed(); </script>
-                    <a href="http://feed.mikle.com/" target="_blank" id="rssLink">RSS Feed Widget</a>   
+                    
+                    <div id="rssButtonsContainer">
+                        <a href="#news" class="rssButton">News</a>
+                        <a href="#alerts" class="rssButton">Alerts</a>
+                    </div>
+                    
+                    <div class="rssFeed" id="news">
+                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
+                    </div>
+                    <div class="rssFeed" id="alerts">
+                        <script> getFeed.allergyFeed("https://www.foodallergy.org/feed.rss?id=11"); </script>
+                    </div>
+                   
+                    <a href="http://feed.mikle.com/" target="_blank" id="rssLink">RSS Feed Widget</a> 
+                    
                 </div> <!-- side bar -->
                 
                 <h2>Allergy Friendly Recipes</h2>
@@ -50,17 +69,57 @@
                 <div id="mainContent">
                     <p> 
                         Here's some yummy recipes to try that are peanut, tree nut, and egg free.
+                        Other ingredients may be substituted to suit your allergy needs as well.
                     </p>
                     
-                    <h3> Donuts </h3>
+                    <ul id="recipeLinks">
+                        <li><a href="#donuts"> Donuts </a></li>
+                        <li><a href="#pancakes"> Pancakes </a></li>
+                    </ul>
+                    
+                    <h3 id="donuts"> Donuts </h3>
                     <ul>
-                        <li>1 cup flour</li>
-                        <li>1 teaspoon baking powder</li>
-                        <li>1 cup milk</li>
+                        <li> 1 cup flour </li>
+                        <li> 1/2 cup sugar </li>
+                        <li> 1 teaspoon baking powder </li>
+                        <li> 1/2 teaspoon salt </li>
+                        <li> 1/2 teaspoon cinnamon (optional) </li>
+                        <li> 1/4 teaspoon nutmeg </li>
+                        <li> 3 tablespoons applesauce </li>
+                        <li> 1/2 cup and 2 tablespoons milk </li>
+                        <li> 1 tablespoon melted butter </li>
+                        <li> 1 teaspoon vanilla extract </li>
                     </ul>
                     <p>
-                        Cook donuts in pan in oven, done!
+                        Preheat oven to 375 degrees Fahrenheit. Mix together dry ingredients
+                        and wet ingredients separately. Mix dry and wet ingredients together.
+                        If you don't want to add applesauce, make sure to add more milk or water
+                        so the mix doesn't come out too dry!
                     </p>
+                    <p>
+                        Pour batter into a greased doughnut pan. Put in oven for 17 minutes.
+                        Top with your favorite topping or each plain!
+                    </p>
+                    
+                    <h3 id="pancakes"> Pancakes </h3>
+                    <ul>
+                        <li> 1 cup flour </li>
+                        <li> 3 tablespoons sugar </li>
+                        <li> 2 1/4 teaspoons baking powder </li>
+                        <li> 1/4 teaspoon salt </li>
+                        <li> 3/4 cups water or milk </li>
+                        <li> 1/3 cup applesauce </li>
+                    </ul>
+                    <p> Mix dry ingredients in a bowl. Mix water (or milk) and applesauce
+                        together. You can add vinegar in the milk beforehand to make
+                        buttermilk pancakes. You can also add a tablespoon of oil here
+                        to make the pancakes non-stick if you have a sticky pan!
+                    </p>
+                    <p>
+                        Mix all the ingredients together, some lumps are okay. Pour into
+                        a preheated pan and cook until golden brown on each side.
+                    </p>
+    
                     
                 </div> <!-- main content -->
                 <p id="clear"></p>

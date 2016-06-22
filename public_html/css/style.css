@@ -42,22 +42,35 @@ body {
     padding: 0;
 }
 
+#contactButtons {
+    position: absolute;
+    margin: 30px 0 0 40px;
+}
+
 #contact #facebook {
     float: left;
-    border: solid black 1px;
-    width: 100px;
-    height: 25px;
-    text-decoration: none;
-    margin: 30px 0 0 20px;
+    width: 70px;
+    height: 18px;
+    background: #3B5998;
+    color: white;
+    border-radius: 5px;
 }
 
 #contact #email {
     float: left;
-    border: solid black 1px;
-    width: 100px;
-    height: 25px;
+    width: 70px;
+    height: 18px;
+    background: darkgray;
+    color: white;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+#contact a {
+    text-align: center;
+    font-size: smaller;
     text-decoration: none;
-    margin: 30px 0 0 20px;
+    padding: 3px 0 0 0;
 }
 
 #nav {
@@ -125,14 +138,28 @@ body {
     color: #6AA3A3;
 }
 
-#mainContent h3 {
+#main h3 {
     color: #6AA3A3;
     padding: 0 0 10px 0;
     margin: 0;
 }
 
+#main ul {
+    margin-top: 0;
+}
+
+#recipeLinks {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#recipeLinks a:active, #recipeLinks a:visited {
+    color: blue;
+}
+
 #main #mainContent {
-    float: left;
+    clear: left;
     padding: 0px 10px 15px 20px;
     margin: 0;
     width: 400px;
@@ -143,13 +170,41 @@ body {
     margin: 0px;
 }
 
-#main #sidebar {
+#sidebar {
     float: right;
     text-align: center;
-    width: 250px;
+    width: 270px;
     padding: 0px 20px 0 20px;
-    margin: 20px 0 0 0;
+    margin: 15px 0 0 0;
     border-left: solid #cccccc 1px;
+}
+
+#rssButtonsContainer {
+    overflow: hidden;
+    margin: 0 0 10px 0;
+}
+
+.rssButton {
+    cursor: pointer;
+    background: #006E6E;
+    color: white;
+    border: #ccc outset;
+    padding: 0 25px 0 25px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.rssButton:focus {
+  
+}
+
+.rssButton:active {
+    border: #ccc inset;
+    background-color: #005555;
+}
+
+.rssFeed {
+    border: none;
 }
 
 #rssLink {
