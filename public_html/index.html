@@ -9,47 +9,54 @@
     
     <body>
         
-        <div id="fb-root"></div>
-        <script>(function(d, s, id) {
-          var js, fjs = d.getElementsByTagName(s)[0];
-          if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-          js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
-          fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
-        </script>
+        <script src="js/facebook-jssdk.js" type="text/javascript"></script>
+        <script> getSdk.facebookJssdk(); </script>
         
         <div id="container">
                 
+            <header>
             <div id="headerBanner">
-                <h1>My Blog</h1>
+                <h1> Living with Food Allergies </h1>
             </div>
+            </header>
 
+            <nav>
             <div id="nav">
                 <ul>
-                    <li>
-                        <a href="index.html" class="current">Home</a>
+                    <li class="current">
+                        <a href="index.html">Home<span></span></a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="posts.html">Posts<span></span></a>
                     </li>
                     <li>
-                        <a href="recipes.html">Recipes</a>
+                        <a href="food.html">Food<span></span></a>
                     </li>
                     <li>
-                        <a href="group.html">Support</a>
+                        <a href="about.html">About<span></span></a>
                     </li>
                 </ul>
             </div> <!-- nav -->
+            </nav>
 
             <div id="contact">
+                <p> Contact: </p>
                 <div id="contactButtons">
-                    <a href="http://www.facebook.com" target="_blank" id="facebook">Facebook</a>
-                    <a href="mailto:something@email.com" target="_blank" id="email">Email</a>
+                    <a href="mailto:bkortma@wgu.edu" target="_blank" id="email">
+                        <img src="images/email_48.png" alt="email icon"/>
+                    </a>
+                    <a href="http://www.facebook.com" target="_blank" id="facebook">
+                        <img src="images/fb_logo_50.png" alt="facebook icon"/>
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank" id="twitter">
+                        <img src="images/twitter_logo_55.png" alt="twitter icon"/>
+                    </a>
                 </div>
             </div>
 
             <div id="main">
                 
+                <aside>
                 <div id="sidebar">
                     
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -59,57 +66,59 @@
                     <script> writeDoc.widgetUrl(); </script>
                     
                     <div id="rssButtonsContainer">
-                        <a href="#news" class="rssButton">News</a>
-                        <a href="#alerts" class="rssButton">Alerts</a>
+                        <a href="#alerts" class="rssButton">
+                            <img src="images/feed_icon_28.png" alt="rss icon" width="16"/> Alerts
+                        </a>
+                        <a href="#news" class="rssButton">
+                            <img src="images/feed_icon_28.png" alt="rss icon" width="16"/> News&nbsp;
+                        </a>
                     </div>
                     
-                    <div class="rssFeed" id="news">
-                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
-                    </div>
                     <div class="rssFeed" id="alerts">
                         <script> getFeed.allergyFeed("https://www.foodallergy.org/feed.rss?id=11"); </script>
+                    </div>
+                    <div class="rssFeed" id="news">
+                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
                     </div>
                    
                     <a href="http://feed.mikle.com/" target="_blank" id="rssLink">RSS Feed Widget</a> 
                     
                 </div> <!-- side bar -->
+                </aside>
                 
+                <section>
                 <h2>Welcome to my blog!</h2>
                 
                 <div id="mainContent">
                     <p> 
-                        Once upon a time there was a lot of content here blah blah 
-                        blah blah, Ashley needs to write something so it can fill 
-                        up and I can see how this is going to look when it is all finished, woo!
+                        Hello! Welcome to my blog.
+                        
+                        I run a support and advocacy group for people with allergies.
+                        I like to share articles and keep everyone up to date on the latest
+                        news regarding food and allergies.
                     </p>
                     <p>
-                        Here's a second paragraph to check if there's spacing between
-                        paragraphs. There should be! Still don't have any good content
-                        to add here. Hopefully Ashley will make some soon :)
+                        I also like to make and share recipes that are allergy friendly!
+                        If you have any that you think are amazing let me know and I'll
+                        add them.
                     </p>
                     
-                    <h3> Some Title </h3>
+                    <h3> Support Group </h3>
                     
                     <p>
-                        More paragraphs with more stuff need more content to fill this
-                        page, more content, more content. Need to fill fill fill the page
-                        fill fill fill page, Woohoo test test test test!
-                        More paragraphs with more stuff need more content to fill this
-                        page, more content, more content. Need to fill fill fill the page
-                        fill fill fill page, Woooo test test test test!
-                        More paragraphs with more stuff need more content to fill this
-                        page, more content, more content. Need to fill fill fill the page
-                        fill fill fill page, Woooo test test test test!
+                        Don't forget to checkout my support group on Facebook. Also 
+                        feel free to leave a comment with suggestions or ideas!
                     </p>
                     
                 </div> <!-- main content -->
+                </section>
                 
                 <p id="clear"></p>
             </div> <!-- main -->
             
-            <!-- Temp until permanent domain is decided on -->
-            <div class="fb-comments" data-href="https://www.facebook.com/" 
-                 data-width="800" data-numposts="5"></div>
+            <!-- Temp comment section for layout purposes -->
+            <div class="fb-comments" data-href="https://www.facebook.com/brant2k" 
+                 data-width="780" data-numposts="5" data-order-by="reverse_time"></div>
             
         </div> <!-- container -->
         

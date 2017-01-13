@@ -4,39 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
-        <title>AS Group</title>
+        <title>AS About</title>
     </head>
     
     <body>
         <div id="container">
                 
             <div id="headerBanner">
-                <h1>My Blog</h1>
+                <h1> Latest Updates </h1>
             </div>
 
             <div id="nav">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">Home<span></span></a>
+                    </li>
+                    <li class="current">
+                        <a href="posts.html">Posts<span></span></a>
                     </li>
                     <li>
-                        <a href="about.html">About</a>
+                        <a href="food.html">Food<span></span></a>
                     </li>
                     <li>
-                        <a href="recipes.html">Recipes</a>
-                    </li>
-                    <li>
-                        <a href="group.html" class="current">Support</a>
+                        <a href="about.html">About<span></span></a>
                     </li>
                 </ul>
             </div> <!-- nav -->
 
             <div id="contact">
+                <p> Contact: </p>
                 <div id="contactButtons">
-                    <a href="http://www.facebook.com" target="_blank" id="facebook">Facebook</a>
-                    <a href="mailto:something@email.com" target="_blank" id="email">Email</a>
+                    <a href="mailto:bkortma@wgu.edu" target="_blank" id="email">
+                        <img src="images/email_48.png" alt="email icon"/>
+                    </a>
+                    <a href="http://www.facebook.com" target="_blank" id="facebook">
+                        <img src="images/fb_logo_50.png" alt="facebook icon"/>
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank" id="twitter">
+                        <img src="images/twitter_logo_55.png" alt="twitter icon"/>
+                    </a>
                 </div>
             </div>
+
 
             <div id="main">
                 
@@ -49,40 +58,42 @@
                     <script> writeDoc.widgetUrl(); </script>
                     
                     <div id="rssButtonsContainer">
-                        <a href="#news" class="rssButton">News</a>
-                        <a href="#alerts" class="rssButton">Alerts</a>
+                        <a href="#alerts" class="rssButton">
+                            <img src="images/feed_icon_28.png" alt="rss icon" width="16"/> Alerts
+                        </a>
+                        <a href="#news" class="rssButton">
+                            <img src="images/feed_icon_28.png" alt="rss icon" width="16"/> News&nbsp;
+                        </a>
                     </div>
                     
-                    <div class="rssFeed" id="news">
-                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
-                    </div>
                     <div class="rssFeed" id="alerts">
                         <script> getFeed.allergyFeed("https://www.foodallergy.org/feed.rss?id=11"); </script>
+                    </div>
+                    <div class="rssFeed" id="news">
+                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
                     </div>
                    
                     <a href="http://feed.mikle.com/" target="_blank" id="rssLink">RSS Feed Widget</a> 
                     
                 </div> <!-- side bar -->
                 
-                <h2>Los Angeles Support Group</h2>
+                <h2> Links to blog posts / articles </h2>
                 
                 <div id="mainContent">
                     <p> 
-                        This is a peanut and tree-nut free group for all ages. The group will 
-                        meet up for indoor and outdoor events. We also have adult only outings
-                        and are open to any other suggestions. If you are a working or a stay 
-                        at home mother who has a child with a life threatening allergy, please 
-                        join us. This is a chance for you and your child to develop a lifelong 
-                        friendship with someone you both can relate to. 
+                        Here is where I'll have new blogs or ideas that I'll write about.
+                        Once I have many articles and posts I'll archive them and post
+                        a link here!
                     </p>
                     <p>
-                        Our Main Website: <a href="http://nonutsmomsgroup.weebly.com/index.html">NoNutsMomsGroup.weebly.com</a>
+                        In the meantime, don't forget to check out the latest allergy alerts and news
+                        in the RSS feeds on the side.
                     </p>
+                    
+                    <h3> Previous Articles </h3>
+                    
                     <p>
-                        "Like" us on Facebook: <a href="http://www.facebook.com/pages/No-Nuts-Moms-Group/132481263500123">NoNutsMomsGroup Facebook</a> 
-                    </p>
-                    <p>
-                        We also have a <a href="http://www.facebook.com/groups/141256719365155/">Support Group and Forum</a> for all Food Allergic Families. 
+                        Coming soon!
                     </p>
                     
                 </div> <!-- main content -->

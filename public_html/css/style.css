@@ -9,10 +9,13 @@ and open the template in the editor.
 */
 
 body {
-    font-family: arial, sans-serif;
+    font-family: Candara, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: #A3CDCD;
+    background: #E5FFFD;
+    background: -webkit-linear-gradient(#E5FFFD, #2AD8CB);
+    background: -moz-linear-gradient(#E5FFFD, #2AD8CB);
+    background: linear-gradient(#E5FFFD, #2AD8CB);
 }
 
 #container {
@@ -22,104 +25,122 @@ body {
 }
 
 #headerBanner {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     width: 100%;
-    height: 100px;
-    background-color: teal;
+    height: 80px;
+    border: solid #6AE7DE 1px;
+    border-radius: 1px;
+    font-family: Corbel, Trebuchet MS, Verdana;
+    background-color: #6AE7DE;
     text-align: center;
     color: whitesmoke;
 }
 
-#headerBanner h1 {
-    padding: 30px;
-}
-
 #contact {
-    background: gainsboro;
+    background: #44D7CC;
+    background: linear-gradient(#6AE7DE, #008080);
     float: left;
     width: 270px;
-    height: 80px;
+    height: 100px;
     margin: 0;
     padding: 0;
 }
 
-#contactButtons {
-    position: absolute;
-    margin: 30px 0 0 40px;
-}
-
-#contact #facebook {
+#contact p {
     float: left;
-    width: 70px;
-    height: 18px;
-    background: #3B5998;
     color: white;
-    border-radius: 5px;
+    margin-top: 35px;
+    margin-right: 15px;
 }
 
-#contact #email {
+#contactButtons img {
+    margin: 20px 10px 0 0;
+}
+
+#contactButtons #facebook img {
     float: left;
-    width: 70px;
-    height: 18px;
-    background: darkgray;
-    color: white;
-    margin-left: 10px;
-    border-radius: 5px;
+    height: 40px;
+    width: 40px;
 }
 
-#contact a {
-    text-align: center;
-    font-size: smaller;
-    text-decoration: none;
-    padding: 3px 0 0 0;
+#contactButtons #email img {
+    float: left;
+    height: 40px;
+    width: 40px;
+}
+
+#contactButtons #twitter img {
+    float: left;
+    height: 40px;
+    width: 40px;
+    border-radius: 3px;
+    background: #55ACEE;
 }
 
 #nav {
-    background: gainsboro;
+    background: #23BFB4;
+    background: linear-gradient(#6AE7DE, #008080);
     float: left;
     width: 530px;
-    height: 80px;
+    height: 100px;
     margin: 0;
     padding: 0;
 }
 
 #nav ul {
     list-style: none;
-    padding: 10px;
 }
 
 #nav ul li {
-    display: inline;
     position: relative;
+    width: 80px;
+    height: 30px;
+    float: left;
+    display: block;
+    text-align: center;
     font-size: large;
     font-family: tahoma, sans-serif;
-    margin-left: 15px;
-    padding: 0 0 0 25px;
-}
-
-#nav li a:link, #nav li a:visited  {
-    border: solid #ccc .5px;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
     background-color: darkcyan;
-    text-decoration: none;
+    margin: 10px 30px 0 0;
+    border: solid #ccc .5px;
+    border-radius: 5px;
     -webkit-box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
     -moz-box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
     box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
 }
 
-#nav li a:active, #nav li a:hover {
+#nav li a {
+    vertical-align: middle;
+}
+
+#nav li span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#nav li a:link, #nav li a:visited  {
+    color: white;
+    text-decoration: none;
+}
+
+#nav li:active, #nav li:hover {
     position: relative;
     top: 3px;
     left: -3px;
     color: whitesmoke;
+    cursor: pointer;
     background-color: #276F6F;
     -webkit-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
     -moz-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
     box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
 }
 
-#nav li a.current {
+#nav li.current {
     position: relative;
     color: #cccccc;
     background-color: #666666;
@@ -180,27 +201,28 @@ body {
 }
 
 #rssButtonsContainer {
-    overflow: hidden;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 5px;
 }
 
 .rssButton {
     cursor: pointer;
-    background: #006E6E;
-    color: white;
-    border: #ccc outset;
-    padding: 0 25px 0 25px;
-    border-radius: 5px;
+    border: outset #008080 2px;
+    padding: 1px 2px 1px 2px;
     text-decoration: none;
+    color: #fff;
+    background: #00C1B3;
 }
 
-.rssButton:focus {
-  
+.rssButton img {
+    position: relative;
+    top: 1px;
+    left: 1px;
 }
 
 .rssButton:active {
-    border: #ccc inset;
-    background-color: #005555;
+    border: inset #008080 2px;
+    color: #ccc;
+    background: #00857B;
 }
 
 .rssFeed {
@@ -211,6 +233,17 @@ body {
     font-size: 10px;
     width: 300px;
     color: #CCCCCC;
+}
+
+.fb-comments {
+    position: absolute;
+    margin: 20px 10px 10px 10px;
+    border-top: solid #DFDFDF .5px;
+    border-bottom: solid #DFDFDF .5px;
+}
+
+table, th, td {
+    border: 1px solid gray;
 }
 
 #footer {

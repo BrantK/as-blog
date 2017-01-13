@@ -4,37 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" type="text/css" rel="stylesheet"/>
-        <title>AS About</title>
+        <title>AS Group</title>
     </head>
     
     <body>
         <div id="container">
                 
             <div id="headerBanner">
-                <h1>My Blog</h1>
+                <h1> A Little About Me </h1>
             </div>
 
             <div id="nav">
                 <ul>
                     <li>
-                        <a href="index.html">Home</a>
+                        <a href="index.html">Home<span></span></a>
                     </li>
                     <li>
-                        <a href="about.html" class="current">About</a>
+                        <a href="posts.html">Posts<span></span></a>
                     </li>
                     <li>
-                        <a href="recipes.html">Recipes</a>
+                        <a href="food.html">Food<span></span></a>
                     </li>
-                    <li>
-                        <a href="group.html">Support</a>
+                    <li class="current">
+                        <a href="about.html">About<span></span></a>
                     </li>
                 </ul>
             </div> <!-- nav -->
 
             <div id="contact">
+                <p> Contact: </p>
                 <div id="contactButtons">
-                    <a href="http://www.facebook.com" target="_blank" id="facebook">Facebook</a>
-                    <a href="mailto:something@email.com" target="_blank" id="email">Email</a>
+                    <a href="mailto:bkortma@wgu.edu" target="_blank" id="email">
+                        <img src="images/email_48.png" alt="email icon"/>
+                    </a>
+                    <a href="http://www.facebook.com" target="_blank" id="facebook">
+                        <img src="images/fb_logo_50.png" alt="facebook icon"/>
+                    </a>
+                    <a href="http://www.twitter.com" target="_blank" id="twitter">
+                        <img src="images/twitter_logo_55.png" alt="twitter icon"/>
+                    </a>
                 </div>
             </div>
 
@@ -49,48 +57,59 @@
                     <script> writeDoc.widgetUrl(); </script>
                     
                     <div id="rssButtonsContainer">
-                        <a href="#news" class="rssButton">News</a>
-                        <a href="#alerts" class="rssButton">Alerts</a>
+                        <a href="#alerts" class="rssButton">
+                            <img src="images/feed_icon_28.png" alt="rss icon" width="16"/> Alerts
+                        </a>
+                        <a href="#news" class="rssButton">
+                            <img src="images/feed_icon_28.png" alt="rss icon" width="16"/> News&nbsp;
+                        </a>
                     </div>
                     
-                    <div class="rssFeed" id="news">
-                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
-                    </div>
                     <div class="rssFeed" id="alerts">
                         <script> getFeed.allergyFeed("https://www.foodallergy.org/feed.rss?id=11"); </script>
+                    </div>
+                    <div class="rssFeed" id="news">
+                        <script> getFeed.allergyFeed("https://rss.sciencedaily.com/health_medicine/allergy.xml"); </script> 
                     </div>
                    
                     <a href="http://feed.mikle.com/" target="_blank" id="rssLink">RSS Feed Widget</a> 
                     
                 </div> <!-- side bar -->
                 
-                <h2>A Little About Myself</h2>
+                <h2>Los Angeles Support Group</h2>
                 
                 <div id="mainContent">
                     <p> 
-                        Once upon a time there was a lot of content here blah blah 
-                        blah blah, Ashley needs to write something so it can fill 
-                        up and I can see how this is going to look when it is all finished, woo!
-                    </p>
-                    <p>
-                        Here's a second paragraph to check if there's spacing between
-                        paragraphs. There should be! Still don't have any good content
-                        to add here. Hopefully Ashley will make some soon :)
+                        I run a peanut and tree-nut free group for all ages. The group will 
+                        meet up for indoor and outdoor events. We also have adult only outings
+                        and are open to any other suggestions. If you are a working or a stay 
+                        at home mother who has a child with a life threatening allergy, please 
+                        join us. This is a chance for you and your child to develop a lifelong 
+                        friendship with someone you both can relate to. 
                     </p>
                     
-                    <h3> Something Else </h3>
-                    
+                    <h3> Links </h3>
                     <p>
-                        More paragraphs with more stuff need more content to fill this
-                        page, more content, more content. Need to fill fill fill the page
-                        fill fill fill page, Woohoo test test test test!
-                        More paragraphs with more stuff need more content to fill this
-                        page, more content, more content. Need to fill fill fill the page
-                        fill fill fill page, Woooo test test test test!
-                        More paragraphs with more stuff need more content to fill this
-                        page, more content, more content. Need to fill fill fill the page
-                        fill fill fill page, Woooo test test test test!
+                        Our Main Website: <a href="http://nonutsmomsgroup.weebly.com/index.html">NoNutsMomsGroup.weebly.com</a>
                     </p>
+                    <p>
+                        "Like" us on Facebook: <a href="http://www.facebook.com/pages/No-Nuts-Moms-Group/132481263500123">NoNutsMomsGroup Facebook</a> 
+                    </p>
+                    <p>
+                        We also have a <a href="http://www.facebook.com/groups/141256719365155/">Support Group and Forum</a> for all Food Allergic Families. 
+                    </p>
+                    
+                    <h3> This years events </h3>
+                    <table>
+                        <tr>
+                            <th> Easter </th>
+                            <th> Halloween </th>
+                        </tr>
+                        <tr>
+                            <td> March 22, 2016 </td>
+                            <td> October 22, 2016 </td>
+                        </tr>
+                    </table>
                     
                 </div> <!-- main content -->
                 <p id="clear"></p>
