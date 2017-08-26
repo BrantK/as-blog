@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : Jun 8, 2016
     Author     : Brant
@@ -10,40 +5,30 @@ and open the template in the editor.
 
 body {
     font-family: Candara, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #E5FFFD;
-    background: -webkit-linear-gradient(#E5FFFD, #2AD8CB);
-    background: -moz-linear-gradient(#E5FFFD, #2AD8CB);
-    background: linear-gradient(#E5FFFD, #2AD8CB);
+    background: #FFFFFF;
+    margin: 0 auto;
 }
 
 #container {
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
-    background: #fff;
+    display: block;
+    overflow: hidden
 }
 
 #headerBanner {
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     width: 100%;
-    height: 80px;
-    border: solid #6AE7DE 1px;
-    border-radius: 1px;
+    border-bottom: solid #CCCCCC 1px;
     font-family: Corbel, Trebuchet MS, Verdana;
-    background-color: #6AE7DE;
+    background-color: #FFFFFF;
     text-align: center;
-    color: whitesmoke;
+    color: #004F5B;
 }
 
 #contact {
-    background: #44D7CC;
-    background: linear-gradient(#6AE7DE, #008080);
-    float: left;
+    float: right;
     width: 270px;
-    height: 100px;
+    height: 30px;
     margin: 0;
     padding: 0;
 }
@@ -51,117 +36,117 @@ body {
 #contact p {
     float: left;
     color: white;
-    margin-top: 35px;
-    margin-right: 15px;
+    margin: 8px 20px 10px 30px;
+    font-size: 14px;
 }
 
 #contactButtons img {
-    margin: 20px 10px 0 0;
+    margin: 5px 20px 0 0;
 }
 
 #contactButtons #facebook img {
     float: left;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
 }
 
 #contactButtons #email img {
     float: left;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
 }
 
 #contactButtons #twitter img {
     float: left;
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     border-radius: 3px;
     background: #55ACEE;
 }
 
 #nav {
-    background: #23BFB4;
-    background: linear-gradient(#6AE7DE, #008080);
-    float: left;
-    width: 530px;
-    height: 100px;
-    margin: 0;
-    padding: 0;
+    background-color: #00a0ba;
+    width: 100%;
+    height: 30px;
 }
 
 #nav ul {
     list-style: none;
+    margin: 0 auto;
 }
 
 #nav ul li {
     position: relative;
-    width: 80px;
+    width: 100px;
     height: 30px;
     float: left;
     display: block;
     text-align: center;
     font-size: large;
     font-family: tahoma, sans-serif;
-    background-color: darkcyan;
-    margin: 10px 30px 0 0;
-    border: solid #ccc .5px;
-    border-radius: 5px;
-    -webkit-box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
-    -moz-box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
-    box-shadow: -3px 3px 1px 1px rgba(0,0,0,0.60);
+    background-color: #00a0ba;
+}
+
+#nav ul li:after {
+    content:""; 
+    background: #ccc; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    top: 20%;
+    bottom: 20%;
+}
+
+#nav ul li:before {
+    content:""; 
+    background: #ccc; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    top: 20%;
+    bottom: 20%;
 }
 
 #nav li a {
     vertical-align: middle;
-}
-
-#nav li span {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    padding: 0 25px 0 25px;
 }
 
 #nav li a:link, #nav li a:visited  {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 #nav li:active, #nav li:hover {
     position: relative;
-    top: 3px;
-    left: -3px;
     color: whitesmoke;
     cursor: pointer;
-    background-color: #276F6F;
-    -webkit-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
-    -moz-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
-    box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+    background-color: #0096ad;
 }
 
-#nav li.current {
-    position: relative;
-    color: #cccccc;
-    background-color: #666666;
+#nav li.selected {
+    color: #CCCCCC;
+    background-color: #008499;
     pointer-events: none;
-    top: 3px;
-    left: -3px;
-    -webkit-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
-    -moz-box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
-    box-shadow: -1px 1px 1px 0 rgba(0,0,0,0.60);
+}
+
+#main {
+    width: 670px;
+    float: left;
+    background: #F7F7F7;
+    margin: 15px 0 0 0;
 }
 
 #main h2 {
     float: left;
-    padding: 15px 0 15px 20px;
+    padding: 10px 0 5px 20px;
     margin: 0 auto;
     color: #6AA3A3;
 }
 
 #main h3 {
     color: #6AA3A3;
-    padding: 0 0 10px 0;
+    padding: 0 0 5px 0;
     margin: 0;
 }
 
@@ -169,21 +154,11 @@ body {
     margin-top: 0;
 }
 
-#recipeLinks {
-    list-style: none;
-    margin: 0 0 20px 0;
-    padding: 0;
-}
-
-#recipeLinks a:active, #recipeLinks a:visited {
-    color: blue;
-}
-
 #main #mainContent {
     clear: left;
     padding: 0px 10px 15px 20px;
     margin: 0;
-    width: 400px;
+    width: 500px;
 }
 
 #mainContent p {
@@ -195,7 +170,7 @@ body {
     float: right;
     text-align: center;
     width: 270px;
-    padding: 0px 20px 0 20px;
+    padding: 5px 20px 5px 20px;
     margin: 15px 0 0 0;
     border-left: solid #cccccc 1px;
 }
@@ -207,8 +182,9 @@ body {
 .rssButton {
     cursor: pointer;
     border: outset #008080 2px;
-    padding: 1px 2px 1px 2px;
+    padding: 1px 10px 1px 10px;
     text-decoration: none;
+    border-radius: 2px;
     color: #fff;
     background: #00C1B3;
 }
@@ -244,6 +220,16 @@ body {
 
 table, th, td {
     border: 1px solid gray;
+}
+
+#recipeLinks {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+#recipeLinks a:active, #recipeLinks a:visited {
+    color: blue;
 }
 
 #footer {

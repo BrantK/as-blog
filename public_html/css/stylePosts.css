@@ -1,0 +1,61 @@
+/* 
+    Created on : Apr 18, 2017, 8:46:37 PM
+    Author     : brant
+*/
+
+#postsContainer {
+    width: 1040px;
+    margin: auto;
+    background-color: gray;
+}
+
+#postsHeaderMain {
+    width: 800px;
+    border-bottom: solid #CCCCCC 1px;
+    font-family: Corbel, Trebuchet MS, Verdana;
+    text-align: center;
+    color: #004F5B;
+    background-color: #FFFFFF;
+}
+
+#postsMain {
+    width: 800px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#postsBody {
+    background-color: #F7F7F7;
+    padding: 10px;
+    margin: 15px 0 0 0;
+}
+
+#postsHeaderSidebar {
+    width: 180px;
+    border-bottom: solid #CCCCCC 1px;
+    font-family: Corbel, Trebuchet MS, Verdana;
+    text-align: center;
+    margin: 40px 0 0 0;
+    color: #004F5B;
+}
+
+#sidebarNav {
+    float: left;
+    margin: 0 20px 0 20px;
+}
+
+#sidebarNav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    align-content: center;
+    margin: 10px 0 10px 0;
+}
+
+#postsMain h3 {
+    margin: 0 0 15px 15px;
+}
+
+#postsMain p {
+    margin: 0 15px 15px 15px;
+}
